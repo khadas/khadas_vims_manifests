@@ -16,7 +16,7 @@
   <project name="security_rk_tee_user" path="external/security/rk_tee_user"/>
   <project name="u-boot" path="u-boot"/>
   <project name="app_lvgl_demo" path="app/lvgl_demo"/>
-  <project name="bsp_rkadk" path="app/rkadk"/>
+  <project name="app_rkadk" path="app/rkadk"/>
   <project name="buildroot" path="buildroot">
     <linkfile src="build/envsetup.sh" dest="envsetup.sh"/>
   </project>
