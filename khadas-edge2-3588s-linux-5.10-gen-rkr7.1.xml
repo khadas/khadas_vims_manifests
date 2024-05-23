@@ -50,11 +50,11 @@
   <project name="rkbin" path="rkbin"/>
 
   <project name="yocto_meta-rockchip" path="yocto/meta-rockchip"/>
-  <project name="yocto_poky" path="yocto/meta-browser" revision="meta-browser"/>
-  <project name="yocto_poky" path="yocto/meta-clang" revision="meta-clang"/>
-  <project name="yocto_poky" path="yocto/meta-openembedded" revision="meta-openembedded"/>
-  <project name="yocto_poky" path="yocto/meta-qt5" revision="meta-qt5"/>
-  <project name="yocto_poky" path="yocto/poky" revision="poky">
+  <project name="yocto_poky" path="yocto/meta-browser" revision="khadas-edge2-3588s-linux-5.10-gen-rkr7.1-meta-browser"/>
+  <project name="yocto_poky" path="yocto/meta-clang" revision="khadas-edge2-3588s-linux-5.10-gen-rkr7.1-meta-clang"/>
+  <project name="yocto_poky" path="yocto/meta-openembedded" revision="khadas-edge2-3588s-linux-5.10-gen-rkr7.1-meta-openembedded"/>
+  <project name="yocto_poky" path="yocto/meta-qt5" revision="khadas-edge2-3588s-linux-5.10-gen-rkr7.1-meta-qt5"/>
+  <project name="yocto_poky" path="yocto/poky" revision="khadas-edge2-3588s-linux-5.10-gen-rkr7.1-poky">
     <linkfile src="scripts" dest="yocto/scripts"/>
     <linkfile src="bitbake" dest="yocto/bitbake"/>
     <linkfile src="meta-poky" dest="yocto/meta-poky"/>
