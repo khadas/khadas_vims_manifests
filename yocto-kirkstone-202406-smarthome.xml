@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote fetch="." name="gitlab"/>
+  <default remote="gitlab" revision="yocto-kirkstone-202406-smarthome" sync-j="32"/>
+
+  <project name="aml-patches" path="aml-patches"/>
+  <project name="u-boot-fip-yocto" path="aml-comp/uboot/fip">
+    <copyfile src="mk" dest="aml-comp/uboot/mk"/>
+  </project>
+  <project name="multimedia-cas-hal" path="aml-comp/multimedia/cas-hal"/>
+  <project name="vendor-dvb" path="aml-comp/vendor/amlogic/dvb"/>
+  <project name="u-boot-bl30-yocto" path="aml-comp/uboot/bl30/src_ao"/>
+  <project name="u-boot-bl2-bin" path="aml-comp/uboot/bl2/bin"/>
+  <project name="u-boot-bl30-bin" path="aml-comp/uboot/bl30/bin"/>
+  <project name="u-boot-bl31-yocto" path="aml-comp/uboot/bl31/bl31_1.0/bin"/>
+  <project name="u-boot-bl31-yocto" path="aml-comp/uboot/bl31/bl31_1.3/bin" revision="yocto-kirkstone-202406-smarthome-1.3"/>
+  <project name="u-boot-bl32-yocto" path="aml-comp/uboot/bl32/bl32_2.4/bin"/>
+  <project name="u-boot-bl32-yocto" path="aml-comp/uboot/bl32/bl32_3.8/bin" revision="yocto-kirkstone-202406-smarthome-3.8"/>
+  <project name="u-boot-bl32-yocto" path="aml-comp/uboot/bl32/bl32_3.18/bin" revision="yocto-kirkstone-202406-smarthome-3.18"/>
+  <project name="u-boot-bl40-yocto" path="aml-comp/uboot/bl40/bin"/>
+  <project name="u-boot-soc-templates" path="aml-comp/uboot/soc/templates"/>
+  <project name="bluetooth-amlogic" path="aml-comp/hardware/aml-5.4/bluetooth/amlogic"/>
+  <project name="linux" path="aml-comp/kernel/aml-5.4" revision="yocto-kirkstone-202406-smarthome-aml-5.4"/>
+  <project name="linux" path="aml-comp/kernel/aml-5.15"/>
+  <project name="common_drivers" path="aml-comp/kernel/aml-5.15/common_drivers"/>
+  <project name="multimedia-libdvr" path="aml-comp/multimedia/libdvr"/>
+  <project name="vendor-libsecdmx_release" path="aml-comp/vendor/amlogic/libsecdmx_release"/>
+  <project name="vendor-libdrm-amlogic" path="aml-comp/vendor/amlogic/libdrm_amlogic"/>
+  <project name="vendor-meson_display" path="aml-comp/vendor/amlogic/meson_display"/>
+  <project name="vendor-meson_mali" path="aml-comp/vendor/amlogic/meson_mali"/>
+  <project name="multimedia" path="aml-comp/multimedia"/>
+  <project name="multimedia-aml_amaudioutils" path="aml-comp/multimedia/aml_amaudioutils"/>
+  <project name="multimedia-hal-audio-service" path="aml-comp/multimedia/hal_audio_service"/>
+  <project name="multimedia-gst-plugin-aml-v4l2dec" path="aml-comp/multimedia/gst-plugin-aml-v4l2dec"/>
+  <project name="multimedia-gst-agmplayer" path="aml-comp/multimedia/gst_agmplayer"/>
+  <project name="multimedia-gst-plugin-aml-picsink" path="aml-comp/multimedia/gst-plugin-aml-picsink"/>
+  <project name="multimedia-gst-plugin-aml-asink" path="aml-comp/multimedia/gst-plugin-aml-asink"/>
+  <project name="multimedia-gst-plugin-venc" path="aml-comp/multimedia/gst-plugin-venc"/>
+  <project name="multimedia-gst-plugin-video-sink" path="aml-comp/multimedia/gst-plugin-video-sink"/>
+  <project name="multimedia-gst-plugin-aml-vsink" path="aml-comp/multimedia/gst-plugin-aml-vsink"/>
+  <project name="multimedia-gst-aml-plugins1" path="aml-comp/multimedia/gst-aml-plugins1"/>
+  <project name="multimedia-gst-aml-drm-plugins1" path="aml-comp/multimedia/gst-aml-drm-plugins1"/>
+  <project name="multimedia-gst-aml-drmbufferpool1" path="aml-comp/multimedia/gst-aml-drmbufferpool1"/>
+  <project name="multimedia-avsync-lib" path="aml-comp/multimedia/avsync-lib"/>
+  <project name="multimedia-libvideorender" path="aml-comp/multimedia/libvideorender"/>
+  <project name="meta-gplv2" path="meta-gplv2"/>
+  <project name="meta-openembedded" path="meta-openembedded"/>
+  <project name="meta-python2" path="meta-python2"/>
+  <project name="meta-qt5" path="meta-qt5"/>
+  <project name="meta-security" path="meta-security"/>
+  <project name="meta-selinux" path="meta-selinux"/>
+  <project name="vendor-bluez" path="aml-comp/vendor/amlogic/bluez"/>
+  <project name="vendor-bluez-alsa" path="aml-comp/vendor/amlogic/bluez-alsa"/>
+  <project name="multimedia-ffmpeg-vendor" path="aml-comp/multimedia/ffmpeg-vendor"/>
+  <project name="multimedia-ffmpeg-aml" path="aml-comp/multimedia/ffmpeg-aml"/>
+  <project name="vendor_zvbi" path="aml-comp/vendor/amlogic/zvbi"/>
+  <project name="vendor-adla_lib" path="aml-comp/vendor/amlogic/adla_lib"/>
+  <project name="adla-driver" path="aml-comp/hardware/aml-5.4/amlogic/adla_driver"/>
+  <project name="vendor-aml-npu-common" path="aml-comp/vendor/amlogic/aml_npu_common"/>
+  <project name="vendor-aucpu-fw" path="aml-comp/vendor/amlogic/aucpu_fw"/>
+  <project name="multimedia-aml-audio-hal" path="aml-comp/multimedia/aml_audio_hal"/>
+  <project name="cve-driver" path="aml-comp/hardware/aml-5.4/amlogic/cve/driver"/>
+  <project name="cve-lib" path="aml-comp/hardware/aml-5.4/amlogic/cve/lib"/>
+  <project name="libgdc" path="aml-comp/hardware/aml-5.4/amlogic/libgdc"/>
+  <project name="libge2d" path="aml-comp/hardware/aml-5.4/amlogic/libge2d"/>
+  <project name="libion" path="aml-comp/hardware/aml-5.4/amlogic/libion"/>
+  <project name="media-modules" path="aml-comp/hardware/aml-5.15/amlogic/media_modules"/>
+  <project name="wifi-yocto" path="aml-comp/hardware/aml-5.4/amlogic/wifi"/>
+  <project name="arm-gpu" path="aml-comp/hardware/aml-4.9/arm/gpu"/>
+  <project name="arm-isp-yocto" path="aml-comp/hardware/aml-5.4/amlogic/arm-isp" revision="yocto-kirkstone-202406-smarthome-aml-5.4"/>
+  <project name="arm-isp-yocto" path="aml-comp/hardware/aml-5.15/amlogic/arm-isp"/>
+  <project name="bluetooth-mediatek" path="aml-comp/hardware/aml-4.9/bluetooth/mediatek"/>
+  <project name="bluetooth-realtek" path="aml-comp/hardware/aml-5.4/bluetooth/realtek"/>
+  <project name="npu-nanoq" path="aml-comp/hardware/aml-5.4/amlogic/npu/nanoq"/>
+  <project name="wifi-amlogic-w1" path="aml-comp/hardware/aml-5.4/wifi/amlogic/drivers/w1"/>
+  <project name="wifi-broadcom-ap6xxx" path="aml-comp/hardware/aml-5.4/wifi/broadcom/drivers/ap6xxx"/>
+  <project name="wifi-mediatek" path="aml-comp/hardware/aml-4.9/wifi/mediatek"/>
+  <project name="wifi-qualcomm-qca6174" path="aml-comp/hardware/aml-5.4/wifi/qualcomm/drivers/qca6174" revision="yocto-kirkstone-202406-smarthome-aml-5.4"/>
+  <project name="wifi-qualcomm-qca6174" path="aml-comp/hardware/aml-5.15/wifi/qualcomm/drivers/qca6174"/>
+  <project name="wifi-realtek-8723bu" path="aml-comp/hardware/aml-5.4/wifi/realtek/drivers/8723bu"/>
+  <project name="wifi-realtek-8723du" path="aml-comp/hardware/aml-5.4/wifi/realtek/drivers/8723du"/>
+  <project name="wifi-realtek-8821cu" path="aml-comp/hardware/aml-5.15/wifi/realtek/drivers/8821cu"/>
+  <project name="wifi-realtek-8822cu" path="aml-comp/hardware/aml-5.4/wifi/realtek/drivers/8822cu"/>
+  <project name="wifi-realtek-8852be" path="aml-comp/hardware/aml-5.4/wifi/realtek/drivers/8852be"/>
+  <project name="libencoder" path="aml-comp/hardware/aml-5.4/amlogic/libencoder"/>
+  <project name="poky" path="poky"/>
+  <project name="u-boot-bl30-rtos_sdk-arch-riscv" path="aml-comp/uboot/bl30/rtos_sdk/arch/riscv"/>
+  <project name="u-boot-bl30-rtos_sdk-boards-riscv" path="aml-comp/uboot/bl30/rtos_sdk/boards/riscv"/>
+  <project name="u-boot-bl30-rtos_sdk-drivers_aocpu" path="aml-comp/uboot/bl30/rtos_sdk/drivers_aocpu"/>
+  <project name="u-boot-bl30-rtos_sdk-kernel-freertos" path="aml-comp/uboot/bl30/rtos_sdk/kernel/freertos"/>
+  <project name="u-boot-bl30-rtos_sdk-lib-libc" path="aml-comp/uboot/bl30/rtos_sdk/lib/libc"/>
+  <project name="u-boot-bl30-rtos_sdk-products-aocpu" path="aml-comp/uboot/bl30/rtos_sdk/products/aocpu"/>
+  <project name="u-boot-bl30-rtos_sdk-scripts" path="aml-comp/uboot/bl30/rtos_sdk/scripts"/>
+  <project name="u-boot-bl30-rtos_sdk-soc-riscv" path="aml-comp/uboot/bl30/rtos_sdk/soc/riscv"/>
+  <project name="u-boot" path="aml-comp/uboot/bl33/v2015" revision="yocto-kirkstone-202406-smarthome-v2015"/>
+  <project name="u-boot" path="aml-comp/uboot/bl33/v2019"/>
+  <project name="vendor-aml-commonlib" path="aml-comp/vendor/amlogic/aml_commonlib"/>
+  <project name="vendor-aml-hdmicec" path="aml-comp/vendor/amlogic/aml_hdmicec"/>
+  <project name="vendor-aml-pqserver" path="aml-comp/vendor/amlogic/aml_pqserver"/>
+  <project name="vendor-aml-subtitleserver" path="aml-comp/vendor/amlogic/aml_subtitleserver"/>
+  <project name="vendor-aml-swupdate-ui" path="aml-comp/vendor/amlogic/aml_swupdate_ui"/>
+  <project name="vendor-apl-client-library" path="aml-comp/vendor/amlogic/apl-client-library"/>
+  <project name="vendor-apl-core-library" path="aml-comp/vendor/amlogic/apl-core-library"/>
+  <project name="vendor-boot-animation" path="aml-comp/vendor/amlogic/boot-animation"/>
+  <project name="multimedia-aml-mp-sdk" path="aml-comp/multimedia/aml_mp_sdk"/>
+  <project name="vendor-dialserver" path="aml-comp/vendor/amlogic/dialserver"/>
+  <project name="vendor-dtvdemod" path="aml-comp/vendor/amlogic/dtvdemod"/>
+  <project name="vendor-gst1-plugins-tsplayer" path="aml-comp/vendor/amlogic/gst1-plugins-tsplayer"/>
+  <project name="vendor-hdcp" path="aml-comp/vendor/amlogic/hdcp"/>
+  <project name="multimedia-iptv-middlewave-bin" path="aml-comp/multimedia/iptv-middlewave-bin"/>
+  <project name="vendor-ledring" path="aml-comp/vendor/amlogic/ledring"/>
+  <project name="vendor-linux-sample-app" path="aml-comp/vendor/amlogic/linux_sample_app"/>
+  <project name="vendor-mediactrlsrc" path="aml-comp/vendor/amlogic/mediactrlsrc"/>
+  <project name="multimedia-mediahal-sdk" path="aml-comp/multimedia/mediahal-sdk"/>
+  <project name="multimedia-gst-aml-utils" path="aml-comp/multimedia/gst-aml-utils"/>
+  <project name="multimedia-libmediadrm" path="aml-comp/multimedia/libmediadrm"/>
+  <project name="vendor-provision" path="aml-comp/vendor/amlogic/provision"/>
+  <project name="vendor-secpu-fw-loader" path="aml-comp/vendor/amlogic/secpu_fw_loader"/>
+  <project name="vendor-tdk" path="aml-comp/vendor/amlogic/tdk/v2.4.4"/>
+  <project name="vendor-tdk-basic" path="aml-comp/vendor/amlogic/tdk/v3.8.0" revision="yocto-kirkstone-202406-smarthome-3.8"/>
+  <project name="vendor-tdk-basic" path="aml-comp/vendor/amlogic/tdk/v3.18.0" revision="yocto-kirkstone-202406-smarthome-3.18"/>
+  <project name="vendor-aml-tvserver" path="aml-comp/vendor/amlogic/aml_tvserver"/>
+  <project name="meta-meson" path="meta-meson"/>
+  <project name="hosttools-yocto" path="aml-comp/prebuilt/hosttools"/>
+  <project name="prebuilt-target" path="aml-comp/prebuilt/target"/>
+  <project name="prebuilt-vendor" path="aml-comp/prebuilt/vendor"/>
+  <project name="vendor_aml_avb_dm_verity" path="aml-comp/vendor/amlogic/aml_avb_dm_verity"/>
+  <project name="npu_app" path="aml-comp/vendor/amlogic/slt/npu_app"/>
+  <project name="meta-aml-cfg" path="meta-aml-cfg"/>
+  <project name="u-boot-bl30-rtos_sdk-build_system" path="aml-comp/uboot/bl30/rtos_sdk/build_system"/>
+</manifest>
