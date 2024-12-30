@@ -1,1 +1,1 @@
-# khadas_vims_manifests
+yocto_manifests
